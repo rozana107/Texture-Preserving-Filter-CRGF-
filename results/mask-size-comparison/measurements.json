@@ -1,0 +1,85 @@
+{
+  "input": "images/paper-original.jpg",
+  "input_sha256": "2fac2b8ff5f9075458386fbe97a3a2e965a9ef2169ef6691595f7ff6fd4b8d95",
+  "size": [
+    953,
+    1024
+  ],
+  "mode": "RGB",
+  "gamma": 1.0,
+  "mask_sizes": [
+    900,
+    640,
+    450,
+    360,
+    160
+  ],
+  "started_utc": "2026-10-19T13:46:48.992717-04:00",
+  "execution": "Five concurrent single-threaded filter processes; timings include concurrent CPU load.",
+  "results": [
+    {
+      "mask_size": 900,
+      "gamma": 1.0,
+      "filter_seconds": 118.331,
+      "wall_seconds": 118.4261,
+      "output": "results\\mask-size-comparison\\mask-900.png",
+      "output_sha256": "17c498954d47198c7e2bbe255d924a2823195777fa229c7641696ff70ced1073",
+      "output_bytes": 1312787,
+      "mean_absolute_rgb_difference": 10.4046,
+      "checks": "exit=0; valid PNG; original dimensions and RGB mode preserved; output differs from input"
+    },
+    {
+      "mask_size": 640,
+      "gamma": 1.0,
+      "filter_seconds": 83.7097,
+      "wall_seconds": 83.8115,
+      "output": "results\\mask-size-comparison\\mask-640.png",
+      "output_sha256": "7d2675874db413170763edb3efac7b6d515c1f9b26bf9ba268675c368a639233",
+      "output_bytes": 1319264,
+      "mean_absolute_rgb_difference": 9.8956,
+      "checks": "exit=0; valid PNG; original dimensions and RGB mode preserved; output differs from input"
+    },
+    {
+      "mask_size": 450,
+      "gamma": 1.0,
+      "filter_seconds": 58.0044,
+      "wall_seconds": 58.1083,
+      "output": "results\\mask-size-comparison\\mask-450.png",
+      "output_sha256": "d09dc8b1c89459ba63a47f3b8f3940dad6edfd6cc4a3f375b433d4cf7be99a4e",
+      "output_bytes": 1327271,
+      "mean_absolute_rgb_difference": 9.3966,
+      "checks": "exit=0; valid PNG; original dimensions and RGB mode preserved; output differs from input"
+    },
+    {
+      "mask_size": 360,
+      "gamma": 1.0,
+      "filter_seconds": 46.0641,
+      "wall_seconds": 46.1643,
+      "output": "results\\mask-size-comparison\\mask-360.png",
+      "output_sha256": "9cf464a0138bc451c7c4e119a11564330f8e0c6999d8c1002f15e63e35897b6d",
+      "output_bytes": 1334059,
+      "mean_absolute_rgb_difference": 9.0869,
+      "checks": "exit=0; valid PNG; original dimensions and RGB mode preserved; output differs from input"
+    },
+    {
+      "mask_size": 160,
+      "gamma": 1.0,
+      "filter_seconds": 21.0685,
+      "wall_seconds": 21.1742,
+      "output": "results\\mask-size-comparison\\mask-160.png",
+      "output_sha256": "09bb77fcfffaee01656154b5f816563fbab328c1f645fb59cea3a94ed50dbc20",
+      "output_bytes": 1364827,
+      "mean_absolute_rgb_difference": 7.9541,
+      "checks": "exit=0; valid PNG; original dimensions and RGB mode preserved; output differs from input"
+    }
+  ],
+  "completed_utc": "2026-10-19T13:48:47.514558-04:00",
+  "checks": "All five masks succeeded; all outputs distinct; input unchanged.",
+  "detail_crop_xyxy": [
+    450,
+    170,
+    900,
+    620
+  ],
+  "original_toolchain": "MSVC 19.51 / OpenCV 4.12.0 (Release)"
+}

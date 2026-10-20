@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "workstation",
+      "displayName": "WorkStation shared GCC and OpenCV",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "D:/WorkStation/tools/workstation-mingw.cmake"
+      },
+      "environment": {
+        "PATH": "D:/WorkStation/tools/w64devkit/bin;$penv{PATH}"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "workstation",
+      "configurePreset": "workstation",
+      "jobs": 4
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "workstation",
+      "configurePreset": "workstation",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
